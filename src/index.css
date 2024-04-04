@@ -1,0 +1,125 @@
+
+.pages{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  height: 100vh;
+  padding: 12px 36px;
+}
+
+.form{
+}
+
+.formFields{
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.personalBox,
+.bio,
+.eduContent,
+.workContent,
+.contact{
+  display: flex;
+  width: fit-content;
+  gap: 2rem;
+  padding: 24px 8px;
+}
+
+.personalBox input,
+.eduContent input,
+.workContent input,
+.contactContent input{
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #baedff9d;
+}
+
+.eduContent,
+.workContent{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.eduContent button,
+.work button{
+padding: 8px 16px;
+border: 0;
+border-radius: 4px;
+}
+
+legend{
+  font-weight: 700;
+}
+
+/*Display*/
+.CvPaper{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 4rem 8rem;
+}
+.cv{
+
+}
+
+.personal{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  border-bottom: 2px rgb(163, 163, 163) solid;
+  padding-bottom: 1rem;
+  
+}
+
+.label,
+.bioData label,
+.eduData div,
+.workData div{
+  font-weight: 600;
+}
+
+.bioData,
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+.profile,
+.educationData,
+.work,
+.contact{
+  padding: 1.75rem 0;
+  border-bottom:  2px rgb(163, 163, 163) solid;
+}
+
+.eduData,
+.workData{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/*Media Queries */
+@media screen and (max-width: 1024px) {
+  .pages{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pages{
+    grid-template-columns: 1fr;
+  }
+  .personalBox,
+  .bio,
+  .contact{
+    flex-direction: column;
+  }
+  h1{
+    text-align: center;
+  }
+}
+
+
