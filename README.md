@@ -1,6 +1,9 @@
 ## CV Builder
 This project is a CV (Curriculum Vitae) builder built using React and React class components. It allows users to input personal information, educational background, work experience, contact details, and a brief bio to generate a formatted CV.
 
+## Live View
+[Cv Builder](https://hidoreen.github.io/CV-builder/)
+
 ## Features
 Personal Information: Users can input their first name, last name, and profession.
 Bio: Users can write a brief biography about themselves.
